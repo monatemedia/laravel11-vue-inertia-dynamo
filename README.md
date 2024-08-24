@@ -53,6 +53,31 @@ php artisan make:model Feature -m
 Make UsedFeature Model
 php artisan make:model UsedFeature -m
 
+## Create User Observer
+
+Make user observer
+php artisan make:observer UserObserver
+
+## Run Migrations with Seeders
+
+Run Migrations and Seed Database
+php artisan migrate:fresh --seed
+
+## Artisan Tinker Database Queries
+
+Enter Tinker
+php artisan tinker
+
+Check DB Connection
+DB::connection()->getDatabaseName()
+Should return = "C:\xampp\htdocs\laravel11-vue-inertia-dynamo\database\database.sqlite"
+
+Get First User Data
+User::first()
+
+Get All User Data
+User::all()
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
