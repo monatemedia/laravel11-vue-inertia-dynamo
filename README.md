@@ -7,6 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Start Project
+
 Start Laravel project
 composer create-project laravel/laravel laravel11-vue-inertia-dynamo
 
@@ -33,6 +35,23 @@ Testing framework
 
 Artisan Serve
 php artisan serve
+
+NPM Run
+npm run dev
+
+## Make Models and Migrations
+
+Make Package Model
+php artisan make:model Package -m
+
+Make Transaction Model
+php artisan make:model Transaction -m
+
+Make Feature Model
+php artisan make:model Feature -m
+
+Make UsedFeature Model
+php artisan make:model UsedFeature -m
 
 ## About Laravel
 
