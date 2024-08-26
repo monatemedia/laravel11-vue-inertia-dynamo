@@ -60,7 +60,7 @@ php artisan make:observer UserObserver
 
 ## Run Migrations with Seeders
 
-Run Migrations and Seed Database
+Rerun Migrations and Seed Database
 php artisan migrate:fresh --seed
 
 ## Artisan Tinker Database Queries
@@ -77,6 +77,32 @@ User::first()
 
 Get All User Data
 User::all()
+
+Get All Features
+\App\Models\Feature::all()
+
+## Make A Controller
+
+Make Controller One
+php artisan make:controller Feature1Controller
+
+Make Controller Two
+php artisan make:controller Feature2Controller
+
+## Make A Resource
+
+Resource controllers are important when using a front-end framework like vue or react. The Resource controller only passes the necessary data for the front-end to do it's work. Passing the data directly from the Controller will expose all data in the controller which would to vulnerabilities.
+
+Make FeatureResource
+php artisan make:resource FeatureResource
+
+## Create Feature 1 Index Component
+
+Create the component in /resources/js/Pages/Feature1/Index.vue
+
+## Add Custom Feature Vue Components
+
+Add Feature.vue component in /resources/js/Components/Feature.vue to use in all new Feature components you're gonna add.That's gonna be a generic component that display's the feature name, number of credits required for the specific feature, and this feature will also lock when the user has insufficient credits to use that feature.
 
 ## About Laravel
 
